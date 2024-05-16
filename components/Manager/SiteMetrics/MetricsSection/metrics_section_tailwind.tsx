@@ -1,0 +1,15 @@
+export const metricSectionStyle = {
+    outerWrapper: 'w-full grid grid-cols-12',
+    innerWrapper: 'col-span-8 bg-white mr-8 px-4 py-8',
+    header: 'font-semibold text-base font-toyota',
+    vehicleWrapper: 'col-span-4 bg-white px-4 py-4',
+    onTime: 'bg-green1 flex items-center pl-2',
+    late: 'bg-red2 flex items-center pl-2',
+    completeStatusWrapper: 'flex h-10',
+    completedAlign: 'flex items-center',
+    legendWrapper: 'flex justify-left h-10',
+    completeOnTime: 'flex items-center mr-2',
+    completeOnTimeIcon: 'bg-green1 w-2 h-2 mr-2',
+    completeLate: 'flex items-center',
+    completeLateIcon: 'bg-red2 w-2 h-2 mr-2',
+}

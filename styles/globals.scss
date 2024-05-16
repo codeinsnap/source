@@ -1,0 +1,266 @@
+//Font Face - Toyota Type
+@font-face {
+  font-family: "Toyota Type";
+  src: url('../../public/webfonts/ToyotaType-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Toyota Type";
+  src: url('../../public/webfonts/ToyotaType-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Toyota Type";
+  src: url('../../public/webfonts/ToyotaType-BoldIt.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+a:hover {
+  color: blue;
+}
+
+.font-toyota {
+  font-family: "Toyota Type";
+}
+
+// Background image
+.content_bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/bgImages/login-back.png');
+}
+
+// multi select drop css here
+.multi-dropdown-container {
+  text-align: left;
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 5px;
+}
+
+.multi-dropdown-input {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.multi-dropdown-menu {
+  position: absolute;
+  transform: translateY(4px);
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+  max-height: 250px;
+  background-color: #fff;
+  z-index: 99;
+  padding: 4px;
+}
+
+.multi-dropdown-item {
+  padding: 16px;
+  cursor: pointer;
+}
+
+.multi-dropdown-item:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.multi-dropdown-item.selected {
+  background-color: black;
+  color: #fff;
+}
+
+.multi-dropdown-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.multi-dropdown-tag-item {
+  background-color: #ddd;
+  padding: 2px 4px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.multi-dropdown-tag-close {
+  display: flex;
+  align-items: center;
+}
+
+.multi-search-box {
+  padding: 16px;
+  background-color: #eee;
+}
+
+.multi-search-box input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+// Spinner
+.pos-center {
+  position: fixed;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+  z-index: 1111;
+}
+
+.commonTable-thead-width {
+  // display: block;
+  width: calc(100% - 1.4em);
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #2469FF;
+  border-bottom: 10px solid #2469FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+}
+.content_bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/bgImages/login-back.png');
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.react-calendar-timeline .rct-dateHeader-primary {
+  background-color: white !important;
+  color: black !important;
+}
+
+.react-calendar-timeline .rct-header-root {
+  background: white !important;
+  position: absolute;
+  z-index: 101;
+  max-width: calc(100% - 4.5%);
+}
+
+// .react-calendar-timeline .rct-horizontal-lines .rct-hl-even,
+// .react-calendar-timeline .rct-horizontal-lines .rct-hl-odd,
+// .react-calendar-timeline .rct-sidebar .rct-sidebar-row.rct-sidebar-row-odd,
+//  .rct-sidebar-row.rct-sidebar-row-even {
+//   height: 50px !important
+// }
+
+// .react-calendar-timeline .rct-horizontal-lines .rct-hl-even,
+// .react-calendar-timeline .rct-horizontal-lines .rct-hl-odd,
+// .react-calendar-timeline .rct-sidebar .rct-sidebar-row.rct-sidebar-row-odd,
+// .react-calendar-timeline .rct-sidebar .rct-sidebar-row.rct-sidebar-row-even,
+// .rct-calendar-header div {
+//   height: 40px !important;
+// }
+
+.rct-hl-even, .rct-hl-odd, .rct-sidebar-row{
+ // border: none !important;
+}
+.rct-item {
+ // width: auto !important;
+ //pointer-events: none !important;
+ overflow: hidden !important;
+}
+
+.rct-calendar-header {
+  pointer-events: none !important;
+}
+
+.rct-sidebar .rct-sidebar-row.rct-sidebar-row-odd, .rct-hl-even, .rct-hl-odd {
+  background: #ffffff !important;
+}
+
+.rct-outer{
+ // max-height: 600px !important;
+ // overflow-y: hidden !important;
+ // overflow-x: hidden !important;
+ // width: 101.8% !important;
+  height: unset !important;
+}
+
+.rct-scroll{
+ // max-height: 600px;
+ margin-top: 30px;
+}
+
+.rct-sidebar {
+ // max-height: 600px;
+ // overflow-y: hidden !important;
+ margin-top: 30px;
+}
+
+.rct-vertical-lines{
+  display: none !important
+}
+
+.rct-horizontal-lines {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+ 
+  .rct-hl-odd {
+    border-bottom: 1px solid #bbb;
+    box-sizing: border-box;
+    z-index: 40;
+  }
+  .rct-hl-even {
+      border-bottom: 0px solid #bbb !important;
+      box-sizing: border-box;
+      z-index: 40;
+    }
+  .rct-hl-odd {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .rct-hl-even {
+    background: transparent;
+  }
+}
+ 
+.rct-sidebar-row {
+  padding: 0 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  margin: 0;
+ 
+  &.rct-sidebar-row-odd {
+    background: rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #bbb;
+  }
+  &.rct-sidebar-row-even {
+    background: transparent;
+    border-bottom: 0px solid #bbb !important;
+  }
+}
+
+
+// Tailwind Utilities Classes
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

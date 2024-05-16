@@ -1,0 +1,16 @@
+export const settingsTableLayoutStyle = {
+    table: 'min-w-full text-left text-sm font-toyota',
+    thead: 'bg-white text-sm table w-full table-fixed',
+    th:'px-3.5 py-4 text-grey4 font-normal',
+    sortingArrow:'flex justify-between items-center cursor-pointer',
+    tbody:'group block max-h-[22rem] overflow-y-auto',
+    tr:'table table-fixed w-full',
+    trIndexGrey:'bg-grey3',
+    trIndexWhite:'bg-white',
+    td:'whitespace-nowrap px-3.5 py-4',
+    status:'text-white rounded text-center pb-0.5',
+    statusBlack:'bg-black',
+    // statusGrey:'grey2',
+    statusGrey:'bg-grey',
+    item: 'w-full h-10 rounded',
+}
